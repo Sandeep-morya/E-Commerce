@@ -91,8 +91,7 @@
       }
       a {
         text-decoration: none;
-        border: 2px solid;
-        border-radius: 1em;
+        color:black;
       }
       #bottom>div{
         display: grid;
@@ -106,9 +105,8 @@
     </style>
   </head>
   <body>
-    <div id="header">
-      <a href="./mens.html"><h1>Site Name</h1></a>
-      <a href="./mens.html"><h1>Mens</h1></a>
+    <div id="header" style="grid-template-columns: 1fr 1fr 1fr ">
+      <a href="./index.html"><h1>Mens</h1></a>
       <a href="./women.html"><h1>Womens</h1></a>
       <a href="./cart.html"><h1>Cart</h1></a>
     </div>
@@ -199,7 +197,7 @@
       let new_td2=document.createElement("td");
 
       btn2.addEventListener("click",e=>{
-        if(box.value=="masai_30"){
+        if(box.value=="code30"){
           let sub=document.querySelector("tbody tr:nth-child(2) td:last-child");
           sub.style.textDecoration="line-through";
           new_td1.innerText="New Price";
